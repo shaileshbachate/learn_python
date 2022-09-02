@@ -1,0 +1,32 @@
+Frequent Pattern Analysis
+Apriori Algorithm 
+Apriori algorithm refers to an algorithm that is used in
+mining frequent products sets and relevant association rules.
+ - Support   : transaction containing A / Total transaction
+ - confidence : conditional probability of A and B
+
+
+
+CLustering 
+
+K Means : K means uses centroids. It takes k randomly initiated points from the data
+          as centroids & assigns every point to nearest centroid.
+	  Or else we can calculate inertia curve to determine number of clusters.
+	  more efficient for large dataset
+	  constraint of number of clusters
+
+
+DBSCAN : Density-Based Spatial Clustering of Applications with Noise
+	 given a set of points in some space, it groups together points
+	 that are closely packed together.
+	 Core points and outliers
+	 Epsilon : radius of neighbourhood
+	 min samples : minimum point in radius to qualify as core point
+	 
+Hierarchical clustering : -> Agglomerative/Agnes (bottom up) : 
+				each observation is treated as cluster and then merged
+				as one moves up in hierarchy
+				Dendogram structure
+			  -> Divisive (top down)
+
+Agnes performed best since no overlap was seen

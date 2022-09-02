@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "lang": [
+        "Mar",
+        "Eng"
+    ],
+    "name": "Shailesh",
+    "roll": 103,
+    "subjects": {
+        "DSPD": "k",
+        "IOOM": "m"
+    }
+}
