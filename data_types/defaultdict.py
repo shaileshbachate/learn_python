@@ -26,4 +26,5 @@ print(cart['apple'])
 cart['orange'] += 1
 cart['orange'] += 1
 print(cart['orange'])
+print(cart)
 print("------------------------------------------------------------------------")

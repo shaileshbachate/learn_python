@@ -42,7 +42,7 @@ print("------------------------------------------------------------------------"
 
 def fun(x):
     if x > 10:
-        raise Exception("x should be less than 10")
+        raise Exception(f"x({x}) should be less than 10")
     print(x)
 
 def fun2(arr, i):
@@ -52,7 +52,8 @@ def fun2(arr, i):
 
 try:
     fun(4)
-    fun(12)
+    fun(12) # If this line raises an exception, the next lines in the try block will not be executed
+    fun(5)
 except Exception as ex:
     print(f"Some error: {ex}!!!\n")
 

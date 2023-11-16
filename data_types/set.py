@@ -7,6 +7,7 @@ print(type(empty_set))
 myset = {"a", "b", "c", "a", False}
 
 # # Sets are unordered, so you cannot be sure in which order the items will appear.
+print("set:", myset)
 print("set: " + str(myset))
 
 print(f"Type: {type(myset)}")  # Type: <class 'set'>
@@ -120,22 +121,26 @@ print("------------------------------------------------------------------------"
 
 s1 = {2, 3, 4}
 s2 = {4, 6, 3, 5, 1, 2}
-print(s1.issubset(s2), s1|s2 == s2)
-print(s2.issuperset(s1), s1|s2 == s2)
-print(s1.isdisjoint(s2), not s1&s2)
+print(s1.issubset(s2), s1 | s2 == s2)
+print(s2.issuperset(s1), s1 | s2 == s2)
+print(s1.isdisjoint(s2), not s1 & s2)
 
-s2 = {6,7,8}
-print(s1.isdisjoint(s2), not s1&s2)
+s2 = {6, 7, 8}
+print(s1.isdisjoint(s2), not s1 & s2)
 print(s1, s2)
 print("------------------------------------------------------------------------")
 
 # Comparing sets #
 s1 = {1, 2, 3, 4}
 s2 = {2, 4, 3, 1}
-if s1 == s2: print("Equal")
-if s1 <= s2: print("s1 is subset of s2")
+if s1 == s2:
+    print("Equal")
+if s1 <= s2:
+    print("s1 is subset of s2")
 
 s2 = {2, 4, 3, 1, 5}
-if s1 < s2: print("s1 is proper subset of s2")
-if s1 > s2: print("s2 is proper subset of s1")
+if s1 < s2:
+    print("s1 is proper subset of s2")
+if s1 > s2:
+    print("s2 is proper subset of s1")
 print("------------------------------------------------------------------------")
